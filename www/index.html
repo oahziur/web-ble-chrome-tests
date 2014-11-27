@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Bluetooth Polyfill Manual Tests</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+     <link rel="import" href="bower_components/paper-button/paper-button.html" />
+    <link rel="import" href="bower_components/web-bluetooth-chrome-app/bluetooth-es5.html" />
+    <link rel="import" href="bower_components/polymer/polymer.html" />
+  </head>
+  <body>
+    <template is="auto-binding" id="model">
+      <div relative layout vertical>
+        <paper-button raised class="colored" on-click="{{requestDevices}}"> Request Devices </paper-button>
+      </div>
+    </template>
+    <script src="tests.js"></script>
+  </body>
+</html>
