@@ -3,14 +3,60 @@
   <head>
     <title>Web Bluetooth Polyfill Manual Tests</title>
     <link rel="stylesheet" href="index.css" type="text/css" />
-     <link rel="import" href="bower_components/paper-button/paper-button.html" />
-    <link rel="import" href="bower_components/web-bluetooth-chrome-app/bluetooth-es5.html" />
+    <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+    <script src="browser-polyfill.js"></script>
+    <link rel="import" href="bower_components/paper-button/paper-button.html" />
+    <link rel="import" href="bower_components/web-bluetooth-chrome-app/bluetooth.html" />
     <link rel="import" href="bower_components/polymer/polymer.html" />
   </head>
   <body>
     <template is="auto-binding" id="model">
       <div relative layout vertical>
-        <paper-button raised class="colored" on-click="{{requestDevices}}"> Request Devices </paper-button>
+        <paper-button raised class="colored" on-click="{{reset}}">
+          Reset
+        </paper-button>
+        <paper-button raised class="colored" on-click="{{addListener}}">
+          Add Listener
+        </paper-button>
+        <paper-button raised class="colored" on-click="{{requestDevices}}">
+          Request Devices
+        </paper-button>
+        <paper-button raised class="colored" on-click="{{connectSelectedDevice}}">
+          Connect Device
+        </paper-button>
+        <paper-button raised class="colored" on-click="{{disconnectSelectedDevice}}">
+          Disconnect Device
+        </paper-button>
+        <paper-button raised class="colored" on-click="{{getAllServices}}">
+          Get All Services
+        </paper-button>
+        <paper-button raised class="colored" on-click="{{getAllIncludedServices}}">
+          Get All Included Services
+        </paper-button>
+        <paper-button raised class="colored" on-click="{{getAllCharacteristics}}">
+          Get All Characteristics
+        </paper-button>
+        <paper-button raised class="colored" on-click="{{getAllDescriptors}}">
+          Get All Descriptors
+        </paper-button>
+        <paper-button raised class="colored" on-click="{{readAllCharacteristics}}">
+          Read All Characteristics
+        </paper-button>
+        <paper-button raised class="colored" on-click="{{writeAllCharacteristics}}">
+          Write All Characteristics
+        </paper-button>
+        <paper-button raised class="colored" on-click="{{startNotificationOnAllCharacteristics}}">
+          Start Notification On All Characteristics
+        </paper-button>
+        <paper-button raised class="colored" on-click="{{stopNotificationOnAllCharacteristics}}">
+          Stop Notification On All Characteristics
+        </paper-button>
+        <paper-button raised class="colored" on-click="{{readAllDescriptors}}">
+          Read All Descriptors
+        </paper-button>
+        <paper-button raised class="colored" on-click="{{writeAllDescriptors}}">
+          Write All Descriptors
+        </paper-button>
       </div>
     </template>
     <script src="tests.js"></script>

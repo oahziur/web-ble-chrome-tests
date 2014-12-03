@@ -9,6 +9,7 @@ body {
   height: 100%;
   margin: 0;
   text-align: center;
+  overflow: auto;
 }
 
 img {
@@ -18,5 +19,5 @@ img {
 paper-button[raised].colored {
   background: #4285f4;
   color: #fff;
-  margin: 5px 5px 5px 5px;
+  margin: 15px 5px 15px 5px;
 }

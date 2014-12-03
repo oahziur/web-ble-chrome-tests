@@ -6,7 +6,7 @@
   "author": "",
   "private": true,
   "dependencies": {
-    "web-bluetooth-chrome-app": "oahziur/chrome-app-polyfill#es5",
+    "web-bluetooth-chrome-app": "oahziur/chrome-app-polyfill#nes5",
     "polymer": "Polymer/polymer#~0.5.1"
   }
 }

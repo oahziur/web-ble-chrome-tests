@@ -23,6 +23,10 @@
             ]
         }
     },
+    "bluetooth": {
+        "low_energy": true,
+        "uuids": ["C9D3", "180D"]
+    },
     "permissions": [
         "<all_urls>"
     ]
